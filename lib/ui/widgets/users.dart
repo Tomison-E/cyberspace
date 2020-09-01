@@ -5,8 +5,8 @@ class Users extends StatelessWidget {
   final String name;
   final String time;
   final String amount;
-
-  Users({this.name,this.amount,this.time});
+  final String url;
+  Users({this.name,this.amount,this.time,this.url});
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -19,7 +19,8 @@ class Users extends StatelessWidget {
               width: 3,
             ),
             SizedBox(width: 10.0),
-            CircleAvatar(backgroundColor: Colors.white,child: Icon(Icons.person)),
+            CircleAvatar(backgroundImage: NetworkImage(url),backgroundColor: Colors.black45,),
+            SizedBox(width: 20.0),
             Column(
               children: [
                 Text(name, style: TextStyle(color: Color.fromRGBO(66, 66, 66, 1.0),fontSize: 10)),
@@ -27,7 +28,8 @@ class Users extends StatelessWidget {
               ],
             ),
             Spacer(),
-            Text(amount,style: TextStyle(color:Color.fromRGBO(50, 39, 166, 1.0),fontSize: 10))
+            Text(amount,style: TextStyle(color:Color.fromRGBO(50, 39, 166, 1.0),fontSize: 10)),
+            SizedBox(width: 20.0),
           ],
         ),
       ),

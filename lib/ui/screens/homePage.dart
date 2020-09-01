@@ -47,7 +47,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
 
   void getUsers()async{
     await _userVm.sortUsers();
-    print (_userVm.approvedUser[0].firstName);
+    print (_userVm.approvedUser[0].avatar);
     setState(() {
     });
   }
@@ -103,10 +103,10 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                   ],indicatorColor:  Color.fromRGBO(27, 20, 100, 1.0),labelColor: Color.fromRGBO(27, 20, 100, 1.0),labelStyle: TextStyle(color: Color.fromRGBO(27, 20, 100, 1.0),fontSize: 12),controller: _tc,labelPadding: EdgeInsets.all(20),),
              Expanded(child: TabBarView(children: [
                     ListView(
-                      children: _userVm.approvedUser.map((e) => Users(name: e.firstName,time: e.time,amount: e.amount)).toList(),shrinkWrap: true,
+                      children: _userVm.approvedUser.map((e) => Users(name: e.firstName,time: e.time,amount: e.amount,url: e.avatar,)).toList(),shrinkWrap: true,
                     ),
                ListView(
-                 children: _userVm.pendingUsers.map((e) => Users(name: e.firstName,time: e.time,amount: e.amount)).toList(),shrinkWrap: true,
+                 children: _userVm.pendingUsers.map((e) => Users(name: e.firstName,time: e.time,amount: e.amount,url: e.avatar)).toList(),shrinkWrap: true,
                )
                   ],controller: _tc,))
 
