@@ -16,7 +16,7 @@ class LoanPage extends StatefulWidget {
      key: _scaffoldKey,
       appBar:  AppBar(
         leading: Icon(Icons.person),
-        title: Text("LOAN APPLICATION",style: TextStyle(color: Color.fromRGBO(61, 54, 142, 1.0),fontSize: 14)),
+        title: Text("LOAN APPLICATION",style: TextStyle(color: Color.fromRGBO(61, 54, 142, 1.0),fontSize: 15)),
         centerTitle: true,
         actions: [
           Text("step 1/5",style: TextStyle(color: Colors.black45,fontSize: 13)),
@@ -28,7 +28,7 @@ class LoanPage extends StatefulWidget {
       body: SingleChildScrollView(
         child: Column(
           children:[
-            Card(margin: EdgeInsets.all(20), child: Padding(padding: EdgeInsets.all(15),child:Column(children:[
+            Card(margin: EdgeInsets.only(left:20,right: 20,top:30), child: Padding(padding: EdgeInsets.all(15),child:Column(children:[
               Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus lectus magna imperdiet commodo. Eu dolor consectetur morbi ullamcorper cursus. Cursus non gravida integer purus neque feugiat justo cras",style:
               TextStyle(fontSize: 12,color: Colors.black45)),
               SizedBox(height: 20),

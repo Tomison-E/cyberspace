@@ -114,11 +114,11 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
           ]
       ),
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon:Icon(Icons.menu,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
-        BottomNavigationBarItem(icon:Icon(Icons.menu,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
-        BottomNavigationBarItem(icon:Icon(Icons.menu,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
-        BottomNavigationBarItem(icon:Icon(Icons.menu,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
-        BottomNavigationBarItem(icon:Icon(Icons.menu,color: Colors.black45,),backgroundColor: Colors.white,title: Text(""))
+        BottomNavigationBarItem(icon:Icon(Icons.settings,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
+        BottomNavigationBarItem(icon:Icon(Icons.security,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
+        BottomNavigationBarItem(icon:Icon(Icons.person,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
+        BottomNavigationBarItem(icon:Icon(Icons.payment,color: Colors.black45,),backgroundColor: Colors.white,title: Text("")),
+        BottomNavigationBarItem(icon:Icon(Icons.print,color: Colors.black45,),backgroundColor: Colors.white,title: Text(""))
       ],backgroundColor: Color.fromRGBO(74, 63, 177, 1.0),onTap: (a)=> Navigator.push(context, CupertinoPageRoute(builder: (context) => LoanPage()))),
 
     )
